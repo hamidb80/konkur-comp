@@ -6,7 +6,7 @@
 
 (let [
     app-config {:title "Konkur Computer" :root-title "home"}
-    s-conf     (solution-paths "./play/notes/" "./play/assets/" "./dist/")
+    s-conf     (solution-paths "./play/notes/" "./play/assets/" "./konkur-comp/" "/konkur-comp/")
     got-style-config {
       :radius   16
       :spacex  100
