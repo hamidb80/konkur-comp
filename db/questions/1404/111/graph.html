@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>GoT of ...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"></script>
+  <link  href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/unpoly@3.8.0/unpoly.min.js"></script>
+  <link  href="https://cdn.jsdelivr.net/npm/unpoly@3.8.0/unpoly.min.css" rel="stylesheet">
+
+  <script src="/konkur-comp/page.js"></script>
+  <link  href="/konkur-comp/style.css" rel="stylesheet"></head>
+<body>
+  <nav class="navbar navbar-light bg-light px-3 d-flex justify-content-between">
+    <div>
+    </div>
+    
+    <a class="navbar-brand" up-follow href="/konkur-comp/">Konkur Computer</a>
+    
+    <div>
+    </div>
+  </nav><main><div class="container mt-4 mb-2 d-flex justify-content-center"><nav aria-label="breadcrumb">
+ <ol class="breadcrumb">
+   <li class="breadcrumb-item">
+     <a up-follow href="/konkur-comp/">home</a>
+      </li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/index.html">db</a></li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/questions/index.html">questions</a></li><li class="breadcrumb-item ">1404</li><li class="breadcrumb-item ">111</li><li class="breadcrumb-item active">graph</li></ol>
+  </nav>
+    </div><nav class="d-flex justify-content-center">
+  <ul class="pagination">
+    <li class="page-item">
+      <span class="page-link active" role="button">
+        <i class="bi bi-layout-split"></i>
+        both
+          </span>
+        </li>
+        <li class="page-item">
+          <span class="page-link" role="button">
+            <i class="bi bi-share"></i>
+            graph first
+          </span>
+        </li>
+        <li class="page-item">
+          <span class="page-link" role="button">
+            <i class="bi bi-card-text"></i>
+            notes first
+          </span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row gx-2 m-3 mt-0" got 
+      data-events='[{"content": "db/questions/1404/111/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/lossless/def","parents": ["root"],"kind": "node","id": "ll","height": 1,"class": "recall"},{"content": "db/concepts/basic/consistency","parents": ["ll"],"kind": "node","id": "cs","height": 1,"class": "recall"},{"content": "db/questions/1404/111/o1_","parents": ["cs"],"kind": "node","id": "o1","height": 1,"class": "reason"},{"content": "db/concepts/keys/primary-key","parents": ["root"],"kind": "node","id": "pk","height": 1,"class": "recall"},{"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 2,"class": "recall"},{"content": "db/questions/1404/111/o2_","parents": ["pk","sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},{"content": "db/concepts/fd/def","parents": ["root"],"kind": "node","id": "fd","height": 1,"class": "recall"},{"content": "db/concepts/fd/not","parents": ["root"],"kind": "node","id": "fdn","height": 1,"class": "recall"},{"content": "db/questions/1404/111/o3_","parents": ["fdn"],"kind": "node","id": "o3","height": 1,"class": "reason"},{"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nr","height": 1,"class": "recall"},{"content": "db/concepts/norm/1nf","parents": ["nr"],"kind": "node","id": "n1","height": 1,"class": "recall"},{"content": "db/questions/1404/111/o4_","parents": ["n1"],"kind": "node","id": "o4","height": 1,"class": "reason"},{"content": "db/questions/1404/111/final_","parents": ["o1"],"kind": "node","id": "goal","height": 1,"class": "goal"}]'
+      data-nodes='{"o1": {"content": "db/questions/1404/111/o1_","parents": ["cs"],"kind": "node","id": "o1","height": 1,"class": "reason"},"o3": {"content": "db/questions/1404/111/o3_","parents": ["fdn"],"kind": "node","id": "o3","height": 1,"class": "reason"},"fdn": {"content": "db/concepts/fd/not","parents": ["root"],"kind": "node","id": "fdn","height": 1,"class": "recall"},"nr": {"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nr","height": 1,"class": "recall"},"goal": {"content": "db/questions/1404/111/final_","parents": ["o1"],"kind": "node","id": "goal","height": 1,"class": "goal"},"sk": {"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 2,"class": "recall"},"o2": {"content": "db/questions/1404/111/o2_","parents": ["pk","sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},"cs": {"content": "db/concepts/basic/consistency","parents": ["ll"],"kind": "node","id": "cs","height": 1,"class": "recall"},"n1": {"content": "db/concepts/norm/1nf","parents": ["nr"],"kind": "node","id": "n1","height": 1,"class": "recall"},"pk": {"content": "db/concepts/keys/primary-key","parents": ["root"],"kind": "node","id": "pk","height": 1,"class": "recall"},"root": {"content": "db/questions/1404/111/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"ll": {"content": "db/concepts/lossless/def","parents": ["root"],"kind": "node","id": "ll","height": 1,"class": "recall"},"fd": {"content": "db/concepts/fd/def","parents": ["root"],"kind": "node","id": "fd","height": 1,"class": "recall"},"o4": {"content": "db/questions/1404/111/o4_","parents": ["n1"],"kind": "node","id": "o4","height": 1,"class": "reason"}}'
+      data-anscestors='{"o1": ["root","cs","ll"],"nr": ["root"],"fdn": ["root"],"o3": ["fdn","root"],"goal": ["o1","root","cs","ll"],"sk": ["root"],"o2": ["pk","root","sk"],"cs": ["ll","root"],"n1": ["root","nr"],"pk": ["root"],"root": [],"fd": ["root"],"ll": ["root"],"o4": ["root","nr","n1"]}'
+    >
+      <aside class="col col-5 pt-2">
+        <div class="fs-6 mb-3">
+          <i class="bi bi-share-fill"></i>
+          graph of thought
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="d-inline-block bg-light border rounded">
+          <svg 
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 628.571428571429 420"
+      width="628.571428571429"
+      height="420"
+    ><circle 
+  r="16" 
+      cx="314.285714285714" 
+      cy="370" 
+      fill="#545454" role="button" class="node node-class-problem node-root" node-id="root"/> <circle 
+  r="16" 
+      cx="100" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-nr" node-id="nr"/> <circle 
+  r="16" 
+      cx="185.714285714286" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-fd" node-id="fd"/> <circle 
+  r="16" 
+      cx="271.428571428571" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-pk" node-id="pk"/> <circle 
+  r="16" 
+      cx="357.142857142857" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-ll" node-id="ll"/> <circle 
+  r="16" 
+      cx="442.857142857143" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-sk" node-id="sk"/> <circle 
+  r="16" 
+      cx="528.571428571429" 
+      cy="290" 
+      fill="#864AF9" role="button" class="node node-class-recall node-fdn" node-id="fdn"/> <circle 
+  r="16" 
+      cx="100" 
+      cy="210" 
+      fill="#864AF9" role="button" class="node node-class-recall node-n1" node-id="n1"/> <circle 
+  r="16" 
+      cx="271.428571428571" 
+      cy="210" 
+      fill="#5CB338" role="button" class="node node-class-reason node-o2" node-id="o2"/> <circle 
+  r="16" 
+      cx="357.142857142857" 
+      cy="210" 
+      fill="#864AF9" role="button" class="node node-class-recall node-cs" node-id="cs"/> <circle 
+  r="16" 
+      cx="528.571428571429" 
+      cy="210" 
+      fill="#5CB338" role="button" class="node node-class-reason node-o3" node-id="o3"/> <circle 
+  r="16" 
+      cx="134.285714285714" 
+      cy="130" 
+      fill="#5CB338" role="button" class="node node-class-reason node-o4" node-id="o4"/> <circle 
+  r="16" 
+      cx="494.285714285714" 
+      cy="130" 
+      fill="#5CB338" role="button" class="node node-class-reason node-o1" node-id="o1"/> <circle 
+  r="16" 
+      cx="314.285714285714" 
+      cy="50" 
+      fill="#545454" role="button" class="node node-class-goal node-goal" node-id="goal"/> <line 
+  x1="324.674585361054" 
+      y1="350.607440659367" 
+      x2="346.753986067518" 
+      y2="309.392559340633" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="ll" class="edge node-ll"/> <line 
+  x1="357.142857142857" 
+      y1="268" 
+      x2="357.142857142857" 
+      y2="232" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="ll" to-node-id="cs" class="edge node-cs"/> <line 
+  x1="376.145992962623" 
+      y1="198.91483743847" 
+      x2="475.282578465949" 
+      y2="141.08516256153" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="cs" to-node-id="o1" class="edge node-o1"/> <line 
+  x1="303.896843210375" 
+      y1="350.607440659367" 
+      x2="281.817442503911" 
+      y2="309.392559340633" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="pk" class="edge node-pk"/> <line 
+  x1="332.964959568733" 
+      y1="358.377358490566" 
+      x2="424.177897574124" 
+      y2="301.622641509434" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="sk" class="edge node-sk"/> <line 
+  x1="271.428571428571" 
+      y1="268" 
+      x2="271.428571428571" 
+      y2="232" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="pk" to-node-id="o2" class="edge node-o2"/> <line 
+  x1="422.921113777247" 
+      y1="280.696519762715" 
+      x2="291.364600508467" 
+      y2="219.303480237285" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="sk" to-node-id="o2" class="edge node-o2"/> <line 
+  x1="295.606469002695" 
+      y1="358.377358490566" 
+      x2="204.393530997305" 
+      y2="301.622641509434" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="fd" class="edge node-fd"/> <line 
+  x1="334.896227609716" 
+      y1="362.305408359039" 
+      x2="507.960915247427" 
+      y2="297.694591640961" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="fdn" class="edge node-fdn"/> <line 
+  x1="528.571428571429" 
+      y1="268" 
+      x2="528.571428571429" 
+      y2="232" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="fdn" to-node-id="o3" class="edge node-o3"/> <line 
+  x1="293.675200961712" 
+      y1="362.305408359039" 
+      x2="120.610513324002" 
+      y2="297.694591640961" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="root" to-node-id="nr" class="edge node-nr"/> <line 
+  x1="100" 
+      y1="268" 
+      x2="100" 
+      y2="232" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="nr" to-node-id="n1" class="edge node-n1"/> <line 
+  x1="108.666224568742" 
+      y1="189.778809339603" 
+      x2="125.619489716973" 
+      y2="150.221190660397" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="n1" to-node-id="o4" class="edge node-o4"/> <line 
+  x1="474.181860216069" 
+      y1="121.064953746824" 
+      x2="334.38956835536" 
+      y2="58.9350462531758" 
+      stroke-width="4"
+      stroke="#424242"from-node-id="o1" to-node-id="goal" class="edge node-goal"/></svg>
+          </div>
+        </div>
+
+        <div class="my-3 d-flex justify-content-center">
+          <button role="button" class="mx-1 btn btn-outline-primary" id="reset-progress-action">
+            reset
+            <i class="bi bi-arrow-clockwise"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary" id="skip-till-end-action">   
+            skip
+            <i class="bi bi-skip-forward"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary" id="prev-step-action"> 
+            prev
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary" id="next-step-action"> 
+            next
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </aside>
+
+      <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
+        <div class="fs-6">
+          <i class="bi bi-person-walking"></i>
+          steps
+        </div>
+
+        <article class="my-3"><div class="pb-3 content" content="db/questions/1404/111/statement_" for="root">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;">
+                              </div><i class="mx-1 bi bi-question-circle"></i>problem<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">در طراحی بانک اطلاعاتی رابطه ای، کدام معیار از همه مهم تر است؟</p><ol dir="auto"><li class="mb-2"><p dir="auto">رعایت شرط LossLess join</p></li><li class="mb-2"><p dir="auto">داشتن کلید اصلی در رابطه هاPrimary Key</p></li><li class="mb-2"><p dir="auto">حفظ وابستگی تابعی Functional Dependency</p></li><li class="mb-2"><p dir="auto">کاهش در رابطه ها(Relation)و خصیصه ها(Attribute)</p></li></ol></div></div>
+                </div><div class="pb-3 content" content="db/concepts/lossless/def" for="ll">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/lossless/def.html">db/concepts/lossless/def<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">تجزیه یک رابطه<span class="latex" dir="ltr" data-display="false">R</span> به دو رابطه <span class="latex" dir="ltr" data-display="false">R_1</span> و <span class="latex" dir="ltr" data-display="false">R_2</span> را <b>بدون گم گشتگی</b> یا <b>lossless</b> می گوییم هرگاه:</p><span class="latex" dir="ltr" data-display="true">R_1 \bowtie R_2 = R</span><p dir="auto"><b>نکته: </b>به علامت مساوی توجه کنید</p><p dir="auto"><b>نکته: </b>عدم برقراری lossless join وضعیت <a up-follow href="/konkur-comp/db/concepts/basic/consistency.html">سازگاری</a> پایگاه داده را مختل میکند</p><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/lossless/decomposition.html">چطور تجزیه بدون گمشتگی داشته باشیم</a></li></ul></div></div>
+                </div><div class="pb-3 content" content="db/concepts/basic/consistency" for="cs">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/basic/consistency.html">db/concepts/basic/consistency<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>سازگاری</b> یا <b>Consistency</b> به طور خلاصه یعنی داده (در ستون های همان جدول یا جداول دیگر) باهم هماهنگ باشند</p><p dir="auto">بحث consistency در پایکاه داده رابطه ای، ناموسی ترین بحث است <i><b>یعنی اگر این مورد برقرار نباشد، اصلا پایگاه داده مفت نمی ارزد</b></i></p></div></div>
+                </div><div class="pb-3 content" content="db/questions/1404/111/o1_" for="o1">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #5CB338 ;">
+                              </div><i class="mx-1 bi bi-lightbulb"></i>reason<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">اگر داده های ما سازگار نباشد، هیچ اطمینانی به درستی داده ها نداریم، پس در نهایت داده ها به درد لای جرز دیوار هم نمیخورند</p></div></div>
+                </div><div class="pb-3 content" content="db/concepts/keys/primary-key" for="pk">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/keys/primary-key.html">db/concepts/keys/primary-key<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">تعریف <b>کلید اصلی</b> یا <b>primary key</b> :</p><p dir="auto"><a up-follow href="/konkur-comp/db/concepts/keys/candidate-key.html">کلید کاندید</a>ی که توسط طراح پایگاه داده برای آن رابطه انتخاب شده است</p><p dir="auto">توجه: یک رابطه تنها میتواند یک کلید اصلی داشته باشد</p></div></div>
+                </div><div class="pb-3 content" content="db/concepts/keys/super-key" for="sk">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>2</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/keys/super-key.html">db/concepts/keys/super-key<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">تعریف <b>ابرکلید</b> یا <b>super key</b> :</p><p dir="auto"><a up-follow href="/konkur-comp/db/concepts/keys/index.html">کلید</a>ی که بتواند هر <a up-follow href="/konkur-comp/db/concepts/basic/tuple.html">تاپل</a> از رابطه را به صورت <b>یکتا</b>  شناسایی کند</p><p dir="auto">توجه: بنابر ویژگی یکتا بودن، ابر کلید باید حتما شامل <a up-follow href="/konkur-comp/db/concepts/keys/candidate-key.html">کلید کاندید</a> باشد</p></div></div>
+                </div><div class="pb-3 content" content="db/questions/1404/111/o2_" for="o2">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #5CB338 ;">
+                              </div><i class="mx-1 bi bi-lightbulb"></i>reason<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">در بدترین حالت در یک رابطه، تنها یک <a up-follow href="/konkur-comp/db/concepts/keys/super-key.html">ابر کلید</a> وجود دارد، که یعنی همه  <a up-follow href="/konkur-comp/db/concepts/basic/attribute.html">صفت</a>ها شامل آن هستند. همچنین تنها یک <a up-follow href="/konkur-comp/db/concepts/keys/candidate-key.html">کلید کاندید</a> وجود دارد که باعث میشود یک انتخاب برای <a up-follow href="/konkur-comp/db/concepts/keys/primary-key.html">کلید اصلی</a> وجود داشته باشد. پس همیشه یک کلید اصلی در رابطه وجود دارد و دغدغه ای برای آن نداریم.</p></div></div>
+                </div><div class="pb-3 content" content="db/concepts/fd/def" for="fd">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/fd/def.html">db/concepts/fd/def<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>وابستگی تابعی</b> یا <b>Functional Dependency</b> محدودیتی بین <a up-follow href="/konkur-comp/db/concepts/basic/attribute.html">صفت</a> های یک <a up-follow href="/konkur-comp/db/concepts/basic/relation.html">رابطه</a> است که به ما در برطرف کردن <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html">بدرفتاری داده</a> کمک میکند</p><p dir="auto">به عبارت دیگر، در هر وابستگی تابعی به شکل <span class="latex" dir="ltr" data-display="false">A \to B</span> در صورت برابر بودن ستون های <span class="latex" dir="ltr" data-display="false">A</span>، ستون های <span class="latex" dir="ltr" data-display="false">B</span> <b>باید تکراری باشند</b></p><p dir="auto">به طور مثال در جدول مشخصات افراد در شرکت پست، وابستگی تابعی <span class="latex" dir="ltr" data-display="false">postal\_Code \to city</span> بیان میکند که به ازای کدپستی <span class="latex" dir="ltr" data-display="false">(postal\_Code)</span> شهر <span class="latex" dir="ltr" data-display="false">(city)</span> یکتا است. <i>یعنی اگر کد پستی دو نفر یکسان باشد، (مثلا اعضای یک خانواده) حتما باید شهر آن ها هم یکسان باشد</i></p><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/fd/not.html">چرا حفظ همه وابستگی های تابعی برایمان اهمیت زیادی ندارد</a></li></ul></div></div>
+                </div><div class="pb-3 content" content="db/concepts/fd/not" for="fdn">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/fd/not.html">db/concepts/fd/not<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">برخی اوقات ممکن است که بخاطر مسائلی مانندسرعت و کاراییقید برخی از<a up-follow href="/konkur-comp/db/concepts/fd/def.html">وابستگی تابعی</a>هایی که وجود دارد را بزنیم</p></div></div>
+                </div><div class="pb-3 content" content="db/questions/1404/111/o3_" for="o3">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #5CB338 ;">
+                              </div><i class="mx-1 bi bi-lightbulb"></i>reason<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"></div></div>
+                </div><div class="pb-3 content" content="db/concepts/norm/def" for="nr">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/def.html">db/concepts/norm/def<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی</b> یا <b>Normalization</b> در طراحی پایگاه داده، شامل روش هایی برای جلوگیری از <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><b>بد رفتاری داده یا data anomaly</b></a> است</p><p dir="auto">سطول نرمال سازی در پایگاه داده رابطه ای:</p><figure class="d-flex justify-content-center">
+  <img style="max-height: 320px" src="/konkur-comp/assets/levels-of-normalization.svg"/>
+      <caption></caption>
+    </figure><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1nf</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/2nf.html">2nf</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/3nf.html">3nf</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">bcnf</a></li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/not.html">چه موقع نباید نرمال سازی کنیم</a></li></ul></div></div>
+                </div><div class="pb-3 content" content="db/concepts/norm/1nf" for="n1">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;">
+                              </div><i class="mx-1 bi bi-sd-card"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/1nf.html">db/concepts/norm/1nf<i class="bi bi-hash"></i></a></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی سطح اول</b> یا <b>1NF</b> (first normal form) اولین مرحله برای تبدیل داده منطقی به فرم رابطه است که بیان میکند:</p><p dir="auto"><a up-follow href="/konkur-comp/db/concepts/basic/attribute.html">صفت</a>های یک <a up-follow href="/konkur-comp/db/concepts/basic/relation.html">رابطه</a> باید به صورت ساده (atomic) باشند. به عبارتی، تو در تو (nested) نباشند </p></div></div>
+                </div><div class="pb-3 content" content="db/questions/1404/111/o4_" for="o4">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #5CB338 ;">
+                              </div><i class="mx-1 bi bi-lightbulb"></i>reason<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">اعمال <a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1nf</a> روی پایگاه داده، باعث افزایش یا ثابت ماندن تعداد ستون ها میشود پس حتما مورد <u>گزینه 4</u> مقصود ما نیست</p></div></div>
+                </div><div class="pb-3 content" content="db/questions/1404/111/final_" for="goal">
+                  <div class="card"><div class="card-header d-flex justify-content-between px-2">
+    <div><small class="text-muted d-flex align-items-center">
+  <div class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;">
+                              </div><i class="mx-1 bi bi-bullseye"></i>goal<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
+<div></div>
+                      </div><div class="card-body" dir="auto"><p dir="auto">هیچ چیز مهمتر از <a up-follow href="/konkur-comp/db/concepts/basic/consistency.html">سازگاری</a> نیست</p></div></div>
+                </div></article>
+      </aside>
+    </div></main>
+    </body>
+    </html>
