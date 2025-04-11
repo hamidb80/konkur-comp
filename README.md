@@ -1,0 +1,1 @@
+"# konkur-comp" 
