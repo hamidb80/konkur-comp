@@ -1,3 +1,3 @@
 [
-  (ref :db/concepts/norm/3nf `3nf`)
+  (ref :db/concepts/norm/3nf `3NF`)
 ]

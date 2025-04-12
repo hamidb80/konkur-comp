@@ -1,3 +1,3 @@
 [
-  (ref :db/concepts/norm/bcnf `bcnf`)
+  (ref :db/concepts/norm/bcnf `BCNF`)
 ]
