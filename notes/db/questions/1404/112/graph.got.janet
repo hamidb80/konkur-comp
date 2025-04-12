@@ -7,6 +7,5 @@
   (n :o2     1      :reason    [:sk]         :db/questions/1404/112/o2_)
   (n :go2    1      :calculate [:o2]         :db/questions/1404/112/go2_)
   (n :final  1      :goal      [:go2]        :db/questions/1404/112/final_)
-  (n :o3     1      :reason    [:root]       :db/questions/1404/112/o3_)
-  (n :o4     1      :reason    [:root]       :db/questions/1404/112/o4_)
+  (n :o34    1      :reason    [:root]       :db/questions/1404/112/o34_)
 ]

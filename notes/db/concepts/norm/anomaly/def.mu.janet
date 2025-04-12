@@ -16,4 +16,8 @@
   `..`
   `..`
   )
+
+(hr)
+(ul
+  (ref :db/concepts/norm/redundancy `افزونگی داده`))
 ]
