@@ -16,6 +16,11 @@
       (ref :db/concepts/ra/theta-join "ا theta join")))
 
   (sp 
+    `SQL`
+    (ol
+      (ref :db/concepts/sql/where `WHERE`)))
+
+  (sp 
     `طراحی پایگاه داده`
     (ol
       (ref :db/concepts/fd/def "وابستگی تابعی")
