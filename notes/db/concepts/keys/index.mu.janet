@@ -16,5 +16,7 @@
 (ul
   (ref :db/concepts/keys/super-key `ابر کلید`)
   (ref :db/concepts/keys/candidate-key `کلید کاندید`)
-  (ref :db/concepts/keys/primary-key `کلید اصلی`))
+  (ref :db/concepts/keys/primary-key `کلید اصلی`)
+  (ref :db/concepts/keys/foreign-key `کلید خارحی`)
+)
 ]

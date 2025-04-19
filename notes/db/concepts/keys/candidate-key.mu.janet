@@ -1,17 +1,17 @@
 [
-(p
-   `تعریف` _
-   (b `کلید کاندید`) _
-   `یا` _
-   (b `candidate key`) _
-   `:`)
 
 (p
-  (ref :db/concepts/keys/index `کلید`)
-  `ی `
-  `که بتوند به صورت یکتا هر`
-  `tuple` _
-  `رابطه را شناسایی کند و` _
+  (b `کلید کاندید`) _
+  `یا` _
+  (b `candidate key`) _
+  `،` _
+  :db/terms/key
+  `ی` _ 
+  `که بتوند به صورت یکتا هر` _ 
+  :db/terms/tuple _
+  `از` _ 
+  :db/terms/relation _ 
+  `را شناسایی کند و` _
 
   (ref :db/concepts/keys/minimal
     (b `کمینه`) _
