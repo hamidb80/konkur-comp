@@ -7,6 +7,8 @@
 (h4 
   `پیش گفتار`)
 
+# TODO make baban-academy a term
+
 (p
   `این متن خاطرات و برداشت ها و توصیه های من برای کنکور ارشد مهندسی کامپیوتر سال 1404 هست.` _ 
   `سعی کردم عکس و ایموجی به متن اضافه کنم که موقع خوندن احساس یکنواختی نکنید.` _ 
@@ -308,6 +310,7 @@
   `George Mason`
   )
 
+# TODO seems like other universitie do not focus on this book like us
 # FIXME book was so stupid and question were hell
 
 (h5 
@@ -412,6 +415,11 @@
   `10. `
   `هوش مصنوعی`)
 
+`از کتاب هم خوندم`
+`تنها درسی که درسنامه اش هم خریدم`
+  `prolog`
+
+# TODO `hill climbing vs local beam search`
 
 (h5 
   `11. `
