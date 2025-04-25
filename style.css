@@ -1,20 +1,23 @@
-a[up-follow]{
-  text-decoration: none;
-}
-
-a[up-follow]:hover{
-  text-decoration: underline;
-}
-
-* {
-  font-family: "Vazirmatn", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-pre {
-  line-height: 0.9;
-  overflow-y: clip;
+a[up-follow]{
+  text-decoration: none;
+}
+
+a[up-follow]:hover{
+  text-decoration: underline;
+}
+
+* {
+  font-family: "Noto Sans Arabic", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+figure img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+pre {
+  line-height: 0.9;
+  overflow-y: clip;
 }
