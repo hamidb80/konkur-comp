@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of ...</title>
+      <title>GoT of graph</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -58,6 +58,7 @@
       </ul>
     </nav>
 
+    
     <div class="row gx-2 m-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/109/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/sql/where","parents": ["root"],"kind": "node","id": "where","height": 3,"class": "recall"},{"content": "db/questions/1404/109/final_","parents": ["where"],"kind": "node","id": "goal","height": 1,"class": "goal"}]'
       data-nodes='{"goal": {"content": "db/questions/1404/109/final_","parents": ["where"],"kind": "node","id": "goal","height": 1,"class": "goal"},"root": {"content": "db/questions/1404/109/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"where": {"content": "db/concepts/sql/where","parents": ["root"],"kind": "node","id": "where","height": 3,"class": "recall"}}'
@@ -94,13 +95,15 @@
       x2="100" 
       y2="152" 
       stroke-width="4"
-      stroke="#424242"from-node-id="root" to-node-id="where" class="edge node-where"/> <line 
+      stroke="#424242"
+      stroke-dasharray="9 4.5 9 4.5 9"from-node-id="root" to-node-id="where" class="edge node-where"/> <line 
   x1="100" 
       y1="108" 
       x2="100" 
       y2="72" 
       stroke-width="4"
-      stroke="#424242"from-node-id="where" to-node-id="goal" class="edge node-goal"/></svg>
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="where" to-node-id="goal" class="edge node-goal"/></svg>
           </div>
         </div>
 
@@ -122,6 +125,7 @@
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
+
       </aside>
 
       <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
@@ -139,7 +143,7 @@
                       </div><div class="card-body" dir="auto"><p dir="auto">جدول کتاب به صورت زیر مفروض است. خروجی درستور  SELECT چیست؟</p><code><pre>
 Books (ISBN, bName, Price)  </pre></code><code><pre>
 SELECT Price FROM Books
-WHERE Price >= AVG(Price);</pre></code><hr/><ol dir="auto"><li class="mb-2"><span>کتاب هایی که قیمت آنها بیش از قیمت میانگین است</span></li><li class="mb-2"><span>کل اطلاعات جدول را بازیابی میکند</span></li><li class="mb-2"><span>میانگین قیمت کتاب ها</span></li><li class="mb-2"><span>خطا دارد</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+WHERE Price >= AVG(Price);</pre></code><hr/><ol dir="auto"><li class="mb-2"><span>کتاب هایی که قیمت آنها بیش از قیمت میانگین است</span></li><li class="mb-2"><span>کل اطلاعات جدول را بازیابی میکند</span></li><li class="mb-2"><span>میانگین قیمت کتاب ها</span></li><li class="mb-2"><span>خطا دارد</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -152,7 +156,7 @@ WHERE Price >= AVG(Price);</pre></code><hr/><ol dir="auto"><li class="mb-2"><sp
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>3</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/sql/where.html"><i class="bi bi-hash"></i>db/concepts/sql/where</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">در قسمت WHERE تابع های  Aggregation نمیواند وجود داشته باشد</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">در قسمت WHERE تابع های  Aggregation نمیواند وجود داشته باشد</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -165,7 +169,7 @@ WHERE Price >= AVG(Price);</pre></code><hr/><ol dir="auto"><li class="mb-2"><sp
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;"></span><i class="mx-1 bi bi-bullseye"></i>goal<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto">سوال ساده ای بود فقط کمی دقت لازم داشت</div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto">سوال ساده ای بود فقط کمی دقت لازم داشت</div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>

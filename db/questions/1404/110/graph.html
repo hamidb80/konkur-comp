@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of ...</title>
+      <title>GoT of graph</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -58,6 +58,7 @@
       </ul>
     </nav>
 
+    
     <div class="row gx-2 m-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/110/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nf","height": 1,"class": "recall"},{"content": "db/questions/1404/110/final_","parents": ["nf"],"kind": "node","id": "goal","height": 1,"class": "goal"},{"content": "db/concepts/norm/3nf","parents": ["nf"],"kind": "node","id": "3nf","height": 1,"class": "recall"},{"content": "db/concepts/norm/bcnf","parents": ["nf"],"kind": "node","id": "bcnf","height": 1,"class": "recall"},{"content": "db/questions/1404/110/o3_","parents": ["3nf","bcnf"],"kind": "node","id": "o3","height": 1,"class": "reason"}]'
       data-nodes='{"bcnf": {"content": "db/concepts/norm/bcnf","parents": ["nf"],"kind": "node","id": "bcnf","height": 1,"class": "recall"},"3nf": {"content": "db/concepts/norm/3nf","parents": ["nf"],"kind": "node","id": "3nf","height": 1,"class": "recall"},"o3": {"content": "db/questions/1404/110/o3_","parents": ["3nf","bcnf"],"kind": "node","id": "o3","height": 1,"class": "reason"},"goal": {"content": "db/questions/1404/110/final_","parents": ["nf"],"kind": "node","id": "goal","height": 1,"class": "goal"},"root": {"content": "db/questions/1404/110/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"nf": {"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nf","height": 1,"class": "recall"}}'
@@ -106,37 +107,43 @@
       x2="175" 
       y2="232" 
       stroke-width="4"
-      stroke="#424242"from-node-id="root" to-node-id="nf" class="edge node-nf"/> <line 
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="root" to-node-id="nf" class="edge node-nf"/> <line 
   x1="190.046704835389" 
       y1="193.950181508918" 
       x2="234.953295164611" 
       y2="146.049818491082" 
       stroke-width="4"
-      stroke="#424242"from-node-id="nf" to-node-id="goal" class="edge node-goal"/> <line 
+      stroke="#424242"
+      stroke-dasharray="65.6585609973065"from-node-id="nf" to-node-id="goal" class="edge node-goal"/> <line 
   x1="175" 
       y1="188" 
       x2="175" 
       y2="152" 
       stroke-width="4"
-      stroke="#424242"from-node-id="nf" to-node-id="3nf" class="edge node-3nf"/> <line 
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="nf" to-node-id="3nf" class="edge node-3nf"/> <line 
   x1="159.953295164611" 
       y1="193.950181508918" 
       x2="115.046704835389" 
       y2="146.049818491082" 
       stroke-width="4"
-      stroke="#424242"from-node-id="nf" to-node-id="bcnf" class="edge node-bcnf"/> <line 
+      stroke="#424242"
+      stroke-dasharray="65.6585609973065"from-node-id="nf" to-node-id="bcnf" class="edge node-bcnf"/> <line 
   x1="175" 
       y1="108" 
       x2="175" 
       y2="72" 
       stroke-width="4"
-      stroke="#424242"from-node-id="3nf" to-node-id="o3" class="edge node-o3"/> <line 
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="3nf" to-node-id="o3" class="edge node-o3"/> <line 
   x1="115.046704835389" 
       y1="113.950181508918" 
       x2="159.953295164611" 
       y2="66.0498184910819" 
       stroke-width="4"
-      stroke="#424242"from-node-id="bcnf" to-node-id="o3" class="edge node-o3"/></svg>
+      stroke="#424242"
+      stroke-dasharray="65.6585609973065"from-node-id="bcnf" to-node-id="o3" class="edge node-o3"/></svg>
           </div>
         </div>
 
@@ -158,6 +165,7 @@
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
+
       </aside>
 
       <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
@@ -172,7 +180,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;"></span><i class="mx-1 bi bi-question-circle"></i>problem<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">کدام مورد نادرست است؟</p><ol dir="auto"><li class="mb-2"><span>اگر جدولی 3NF باشد، حتما BCNF هم هست</span></li><li class="mb-2"><span>اگر جدولی 3NF باشد، حتما 2NF هم هست</span></li><li class="mb-2"><span>ممکن است یک جدول 3NF باشد ولی شامل وابستگی های غیرکلیدی باشد</span></li><li class="mb-2"><span>3NF بودن، تضمینی برای حفظ وابستگی تابعی Functional Dependency است</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">کدام مورد نادرست است؟</p><ol dir="auto"><li class="mb-2"><span>اگر جدولی 3NF باشد، حتما BCNF هم هست</span></li><li class="mb-2"><span>اگر جدولی 3NF باشد، حتما 2NF هم هست</span></li><li class="mb-2"><span>ممکن است یک جدول 3NF باشد ولی شامل وابستگی های غیرکلیدی باشد</span></li><li class="mb-2"><span>3NF بودن، تضمینی برای حفظ وابستگی تابعی Functional Dependency است</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -185,10 +193,10 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/def.html"><i class="bi bi-hash"></i>db/concepts/norm/def</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی</b> یا <b>Normalization</b> در طراحی پایگاه داده، شامل روش هایی برای جلوگیری از <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><b>بد رفتاری داده یا data anomaly</b></a> است</p><p dir="auto">سطول نرمال سازی در پایگاه داده رابطه ای:</p><figure class="text-center">
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی</b> یا <b>Normalization</b> در طراحی پایگاه داده، شامل روش هایی برای جلوگیری از <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><b>بد رفتاری داده یا data anomaly</b></a> است</p><p dir="auto">سطوح نرمال سازی در پایگاه داده رابطه ای:</p><figure class="text-center">
   <img style="max-height: 320px" src="/konkur-comp/assets/levels-of-normalization.svg"/>
       <figcaption dir="auto"></figcaption>
-    </figure><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/2nf.html">2NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/3nf.html">3NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a></li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/not.html">چه موقع نباید نرمال سازی کنیم</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+    </figure><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/2nf.html">2NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/3nf.html">3NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a></li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/not.html">چه موقع نباید نرمال سازی کنیم</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -201,7 +209,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;"></span><i class="mx-1 bi bi-bullseye"></i>goal<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">بنابر سلسله مراتب <a up-follow href="/konkur-comp/db/concepts/norm/def.html">نرمال سازی</a> گزینه 1 نادرست است</p><p dir="auto">گزینه های دیگر را برای اطمینان بررسی میکنیم...</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">بنابر سلسله مراتب <a up-follow href="/konkur-comp/db/concepts/norm/def.html">نرمال سازی</a> گزینه 1 نادرست است</p><p dir="auto">گزینه های دیگر را برای اطمینان بررسی میکنیم...</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -214,7 +222,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/3nf.html"><i class="bi bi-hash"></i>db/concepts/norm/3nf</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">این مورد تضمین میشود که 3NF <a up-follow href="/konkur-comp/db/concepts/fd/def.html">وابستگی تابعی</a> را حفظ میکند</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">این مورد تضمین میشود که 3NF <a up-follow href="/konkur-comp/db/concepts/fd/def.html">وابستگی تابعی</a> را حفظ میکند</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -227,7 +235,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/bcnf.html"><i class="bi bi-hash"></i>db/concepts/norm/bcnf</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">ممکن است کهBCNF <a up-follow href="/konkur-comp/db/concepts/fd/def.html">وابستگی تابعی</a> را از دست بدهد</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">ممکن است کهBCNF <a up-follow href="/konkur-comp/db/concepts/fd/def.html">وابستگی تابعی</a> را از دست بدهد</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -240,7 +248,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #5CB338 ;"></span><i class="mx-1 bi bi-lightbulb"></i>reason<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto"><u>گزینه 3</u> بله، واستبگی های غیر کلید از <a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a> حذف میشوند</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto"><u>گزینه 3</u> بله، واستبگی های غیر کلید از <a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a> حذف میشوند</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>

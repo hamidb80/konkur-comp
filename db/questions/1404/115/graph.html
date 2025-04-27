@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of ...</title>
+      <title>GoT of graph</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -58,6 +58,7 @@
       </ul>
     </nav>
 
+    
     <div class="row gx-2 m-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/115/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "r1","height": 1,"class": "recall"},{"content": "db/concepts/norm/anomaly/def","parents": ["r1"],"kind": "node","id": "r2","height": 1,"class": "recall"},{"content": "db/questions/1404/115/final_","parents": ["r2"],"kind": "node","id": "fin","height": 1,"class": "goal"}]'
       data-nodes='{"r1": {"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "r1","height": 1,"class": "recall"},"root": {"content": "db/questions/1404/115/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"r2": {"content": "db/concepts/norm/anomaly/def","parents": ["r1"],"kind": "node","id": "r2","height": 1,"class": "recall"},"fin": {"content": "db/questions/1404/115/final_","parents": ["r2"],"kind": "node","id": "fin","height": 1,"class": "goal"}}'
@@ -98,19 +99,22 @@
       x2="100" 
       y2="232" 
       stroke-width="4"
-      stroke="#424242"from-node-id="root" to-node-id="r1" class="edge node-r1"/> <line 
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="root" to-node-id="r1" class="edge node-r1"/> <line 
   x1="100" 
       y1="188" 
       x2="100" 
       y2="152" 
       stroke-width="4"
-      stroke="#424242"from-node-id="r1" to-node-id="r2" class="edge node-r2"/> <line 
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="r1" to-node-id="r2" class="edge node-r2"/> <line 
   x1="100" 
       y1="108" 
       x2="100" 
       y2="72" 
       stroke-width="4"
-      stroke="#424242"from-node-id="r2" to-node-id="fin" class="edge node-fin"/></svg>
+      stroke="#424242"
+      stroke-dasharray="36"from-node-id="r2" to-node-id="fin" class="edge node-fin"/></svg>
           </div>
         </div>
 
@@ -132,6 +136,7 @@
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
+
       </aside>
 
       <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
@@ -146,7 +151,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;"></span><i class="mx-1 bi bi-question-circle"></i>problem<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">هدف اصلی نرمال سازی در پایگاه داده ای رابطه ای چیست؟</p><ol dir="auto"><li class="mb-2"><span>ساده کرده طراحی پایگاه داده</span></li><li class="mb-2"><span>فشرده سازی داده ها</span></li><li class="mb-2"><span>افزایش کارایی پرس و جوها</span></li><li class="mb-2"><span>کاهش افزونگی داده ها</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">هدف اصلی نرمال سازی در پایگاه داده ای رابطه ای چیست؟</p><ol dir="auto"><li class="mb-2"><span>ساده کرده طراحی پایگاه داده</span></li><li class="mb-2"><span>فشرده سازی داده ها</span></li><li class="mb-2"><span>افزایش کارایی پرس و جوها</span></li><li class="mb-2"><span>کاهش افزونگی داده ها</span></li></ol></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -159,10 +164,10 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/def.html"><i class="bi bi-hash"></i>db/concepts/norm/def</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی</b> یا <b>Normalization</b> در طراحی پایگاه داده، شامل روش هایی برای جلوگیری از <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><b>بد رفتاری داده یا data anomaly</b></a> است</p><p dir="auto">سطول نرمال سازی در پایگاه داده رابطه ای:</p><figure class="text-center">
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>نرمال سازی</b> یا <b>Normalization</b> در طراحی پایگاه داده، شامل روش هایی برای جلوگیری از <a up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><b>بد رفتاری داده یا data anomaly</b></a> است</p><p dir="auto">سطوح نرمال سازی در پایگاه داده رابطه ای:</p><figure class="text-center">
   <img style="max-height: 320px" src="/konkur-comp/assets/levels-of-normalization.svg"/>
       <figcaption dir="auto"></figcaption>
-    </figure><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/2nf.html">2NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/3nf.html">3NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a></li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/not.html">چه موقع نباید نرمال سازی کنیم</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+    </figure><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/1nf.html">1NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/2nf.html">2NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/3nf.html">3NF</a></li><li><a up-follow href="/konkur-comp/db/concepts/norm/bcnf.html">BCNF</a></li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/not.html">چه موقع نباید نرمال سازی کنیم</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -175,7 +180,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #864AF9 ;"></span><i class="mx-1 bi bi-floppy"></i>recall<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div><a class="text-muted" up-follow href="/konkur-comp/db/concepts/norm/anomaly/def.html"><i class="bi bi-hash"></i>db/concepts/norm/anomaly/def</a></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto"><b>بد رفتاری داده</b> یا <b>data anomaly</b> به مشکلاتی گفته میشه که باعث و بانی اون <b>ساختار ذخیره سازی داده</b> هستن</p><p dir="auto">و به این چند مورد دسته بندی میشن:</p><ul dir="auto"><li>..</li><li>..</li><li>..</li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/redundancy.html">افزونگی داده</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto"><b>بد رفتاری داده</b> یا <b>data anomaly</b> به مشکلاتی گفته میشه که باعث و بانی اون <b>ساختار ذخیره سازی داده</b> هستن</p><p dir="auto">و به این چند مورد دسته بندی میشن:</p><ul dir="auto"><li>..</li><li>..</li><li>..</li></ul><hr/><ul dir="auto"><li><a up-follow href="/konkur-comp/db/concepts/norm/redundancy.html">افزونگی داده</a></li></ul></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
@@ -188,7 +193,7 @@
                         <div><small class="text-muted d-flex align-items-center">
   <span class="d-inline-block rounded-circle" style="width: 14px; height: 14px; background-color: #545454 ;"></span><i class="mx-1 bi bi-bullseye"></i>goal<i class="bi bi-triangle ms-3 me-1"></i>1</small></div>
 <div></div>
-                      </div><div class="card-body" dir="auto"><p dir="auto">سوال راحتی بود</p></div><div class="card-footer d-flex justify-content-between py-1" dir="auto">
+                      </div><div class="card-body" dir="auto"><p dir="auto">سوال راحتی بود</p></div><div class="card-footer d-flex justify-content-between py-1">
     <button role="button" class="fold btn btn-sm btn-outline-dark toggle-graph-message-btn">
       <i class="bi bi-chevron-double-up"></i>
     </button>
