@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of graph</title>
+      <title>GoT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,140 +35,142 @@
      <a up-follow href="/konkur-comp/">home</a>
       </li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/index.html">db</a></li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/questions/index.html">questions</a></li><li class="breadcrumb-item ">1404</li><li class="breadcrumb-item ">110</li><li class="breadcrumb-item active">graph</li></ol>
   </nav>
-    </div><nav class="d-flex justify-content-center">
+    </div><nav class="d-lg-flex d-none justify-content-center">
   <ul class="pagination">
     <li class="page-item">
       <span class="page-link active" role="button">
         <i class="bi bi-layout-split"></i>
-        both
+        <span class="d-lg-inline-block d-none">both</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-share"></i>
-            graph first
+            <span class="d-lg-inline-block d-none">graph first</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-card-text"></i>
-            notes first
+            <span class="d-lg-inline-block d-none">notes first</span>
           </span>
         </li>
       </ul>
     </nav>
 
     
-    <div class="row gx-2 m-3 mt-0" got 
+    <div class="row gx-4 m-1 m-lg-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/110/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nf","height": 1,"class": "recall"},{"content": "db/questions/1404/110/final_","parents": ["nf"],"kind": "node","id": "goal","height": 1,"class": "goal"},{"content": "db/concepts/norm/3nf","parents": ["nf"],"kind": "node","id": "3nf","height": 1,"class": "recall"},{"content": "db/concepts/norm/bcnf","parents": ["nf"],"kind": "node","id": "bcnf","height": 1,"class": "recall"},{"content": "db/questions/1404/110/o3_","parents": ["3nf","bcnf"],"kind": "node","id": "o3","height": 1,"class": "reason"}]'
       data-nodes='{"bcnf": {"content": "db/concepts/norm/bcnf","parents": ["nf"],"kind": "node","id": "bcnf","height": 1,"class": "recall"},"3nf": {"content": "db/concepts/norm/3nf","parents": ["nf"],"kind": "node","id": "3nf","height": 1,"class": "recall"},"o3": {"content": "db/questions/1404/110/o3_","parents": ["3nf","bcnf"],"kind": "node","id": "o3","height": 1,"class": "reason"},"goal": {"content": "db/questions/1404/110/final_","parents": ["nf"],"kind": "node","id": "goal","height": 1,"class": "goal"},"root": {"content": "db/questions/1404/110/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"nf": {"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nf","height": 1,"class": "recall"}}'
       data-anscestors='{"bcnf": ["nf","root"],"3nf": ["nf","root"],"o3": ["bcnf","3nf","root","nf"],"goal": ["nf","root"],"root": [],"nf": ["root"]}'
     >
-      <aside class="col col-5 pt-2">
+      <aside class="col col-12 col-lg-5 pt-2">
         <div class="fs-6 mb-3">
           <i class="bi bi-share-fill"></i>
           graph of thought
         </div>
 
-        <div class="d-flex justify-content-center">
-          <div class="d-inline-block bg-light border rounded">
+        <div class="d-flex justify-content-center bg-light border rounded" got-svg>
           <svg 
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 350 340"
-      width="350"
-      height="340"
+  viewBox="0 0 230 320"
+      width="230"
+      height="320"
     ><circle 
   r="16" 
-      cx="175" 
-      cy="290" 
+      cx="115" 
+      cy="280" 
       fill="#545454" role="button" class="node node-class-problem node-root" node-id="root"/> <circle 
   r="16" 
-      cx="175" 
-      cy="210" 
+      cx="115" 
+      cy="200" 
       fill="#864AF9" role="button" class="node node-class-recall node-nf" node-id="nf"/> <circle 
   r="16" 
-      cx="100" 
-      cy="130" 
+      cx="40" 
+      cy="120" 
       fill="#864AF9" role="button" class="node node-class-recall node-bcnf" node-id="bcnf"/> <circle 
   r="16" 
-      cx="175" 
-      cy="130" 
+      cx="115" 
+      cy="120" 
       fill="#864AF9" role="button" class="node node-class-recall node-3nf" node-id="3nf"/> <circle 
   r="16" 
-      cx="250" 
-      cy="130" 
+      cx="190" 
+      cy="120" 
       fill="#545454" role="button" class="node node-class-goal node-goal" node-id="goal"/> <circle 
   r="16" 
-      cx="175" 
-      cy="50" 
+      cx="115" 
+      cy="40" 
       fill="#5CB338" role="button" class="node node-class-reason node-o3" node-id="o3"/> <line 
-  x1="175" 
-      y1="268" 
-      x2="175" 
-      y2="232" 
+  x1="115" 
+      y1="258" 
+      x2="115" 
+      y2="222" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="root" to-node-id="nf" class="edge node-nf"/> <line 
-  x1="190.046704835389" 
-      y1="193.950181508918" 
-      x2="234.953295164611" 
-      y2="146.049818491082" 
+  x1="130.046704835389" 
+      y1="183.950181508918" 
+      x2="174.953295164611" 
+      y2="136.049818491082" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="65.6585609973065"from-node-id="nf" to-node-id="goal" class="edge node-goal"/> <line 
-  x1="175" 
-      y1="188" 
-      x2="175" 
-      y2="152" 
+  x1="115" 
+      y1="178" 
+      x2="115" 
+      y2="142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="nf" to-node-id="3nf" class="edge node-3nf"/> <line 
-  x1="159.953295164611" 
-      y1="193.950181508918" 
-      x2="115.046704835389" 
-      y2="146.049818491082" 
+  x1="99.9532951646108" 
+      y1="183.950181508918" 
+      x2="55.0467048353893" 
+      y2="136.049818491082" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="65.6585609973065"from-node-id="nf" to-node-id="bcnf" class="edge node-bcnf"/> <line 
-  x1="175" 
-      y1="108" 
-      x2="175" 
-      y2="72" 
+  x1="115" 
+      y1="98" 
+      x2="115" 
+      y2="62" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="3nf" to-node-id="o3" class="edge node-o3"/> <line 
-  x1="115.046704835389" 
-      y1="113.950181508918" 
-      x2="159.953295164611" 
-      y2="66.0498184910819" 
+  x1="55.0467048353893" 
+      y1="103.950181508918" 
+      x2="99.9532951646108" 
+      y2="56.0498184910819" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="65.6585609973065"from-node-id="bcnf" to-node-id="o3" class="edge node-o3"/></svg>
-          </div>
         </div>
 
-        <div class="my-3 d-flex justify-content-center">
+        <div class="my-3 d-flex justify-content-center got-action-center">
           <button role="button" class="mx-1 btn btn-outline-primary" id="reset-progress-action">
-            reset
+            <span class="d-lg-inline-block d-none">reset</span>
             <i class="bi bi-arrow-clockwise"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="skip-till-end-action">   
-            skip
+            <span class="d-lg-inline-block d-none">skip</span>
             <i class="bi bi-skip-forward"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="prev-step-action"> 
-            prev
+            <span class="d-lg-inline-block d-none">prev</span>
             <i class="bi bi-arrow-left"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="next-step-action"> 
-            next
+            <span class="d-lg-inline-block d-none">next</span>
             <i class="bi bi-arrow-right"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary d-lg-none" id="next-goto-got"> 
+            <span class="d-lg-inline-block d-none">next</span>
+            <i class="bi bi-arrow-up"></i>
           </button>
         </div>
 
       </aside>
 
-      <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
+      <aside class="col col-12 col-lg-7 pt-2 content-bar">
         <div class="fs-6">
           <i class="bi bi-person-walking"></i>
           steps
@@ -256,6 +258,8 @@
                         <span></span>
                     </div></div>
                 </div></article>
+
+        <div class="d-lg-none" style="height: 40px"></div>
       </aside>
     </div></main>
     </body>

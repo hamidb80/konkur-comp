@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of graph</title>
+      <title>GoT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,166 +35,168 @@
      <a up-follow href="/konkur-comp/">home</a>
       </li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/index.html">db</a></li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/questions/index.html">questions</a></li><li class="breadcrumb-item ">1404</li><li class="breadcrumb-item ">112</li><li class="breadcrumb-item active">graph</li></ol>
   </nav>
-    </div><nav class="d-flex justify-content-center">
+    </div><nav class="d-lg-flex d-none justify-content-center">
   <ul class="pagination">
     <li class="page-item">
       <span class="page-link active" role="button">
         <i class="bi bi-layout-split"></i>
-        both
+        <span class="d-lg-inline-block d-none">both</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-share"></i>
-            graph first
+            <span class="d-lg-inline-block d-none">graph first</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-card-text"></i>
-            notes first
+            <span class="d-lg-inline-block d-none">notes first</span>
           </span>
         </li>
       </ul>
     </nav>
 
     
-    <div class="row gx-2 m-3 mt-0" got 
+    <div class="row gx-4 m-1 m-lg-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/112/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/keys/candidate-key","parents": ["root"],"kind": "node","id": "ck","height": 1,"class": "recall"},{"content": "db/questions/1404/112/o1_","parents": ["ck"],"kind": "node","id": "o1","height": 1,"class": "reason"},{"content": "db/questions/1404/112/go1_","parents": ["o1"],"kind": "node","id": "go1","height": 1,"class": "calculate"},{"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 1,"class": "recall"},{"content": "db/questions/1404/112/o2_","parents": ["sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},{"content": "db/questions/1404/112/go2_","parents": ["o2"],"kind": "node","id": "go2","height": 1,"class": "calculate"},{"content": "db/questions/1404/112/final_","parents": ["go2"],"kind": "node","id": "final","height": 1,"class": "goal"},{"content": "db/questions/1404/112/o34_","parents": ["root"],"kind": "node","id": "o34","height": 1,"class": "reason"}]'
       data-nodes='{"o1": {"content": "db/questions/1404/112/o1_","parents": ["ck"],"kind": "node","id": "o1","height": 1,"class": "reason"},"go1": {"content": "db/questions/1404/112/go1_","parents": ["o1"],"kind": "node","id": "go1","height": 1,"class": "calculate"},"sk": {"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 1,"class": "recall"},"o34": {"content": "db/questions/1404/112/o34_","parents": ["root"],"kind": "node","id": "o34","height": 1,"class": "reason"},"o2": {"content": "db/questions/1404/112/o2_","parents": ["sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},"final": {"content": "db/questions/1404/112/final_","parents": ["go2"],"kind": "node","id": "final","height": 1,"class": "goal"},"root": {"content": "db/questions/1404/112/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"ck": {"content": "db/concepts/keys/candidate-key","parents": ["root"],"kind": "node","id": "ck","height": 1,"class": "recall"},"go2": {"content": "db/questions/1404/112/go2_","parents": ["o2"],"kind": "node","id": "go2","height": 1,"class": "calculate"}}'
       data-anscestors='{"o1": ["ck","root"],"go1": ["o1","root","ck"],"sk": ["root"],"o34": ["root"],"o2": ["sk","root"],"final": ["o2","root","sk","go2"],"root": [],"ck": ["root"],"go2": ["o2","root","sk"]}'
     >
-      <aside class="col col-5 pt-2">
+      <aside class="col col-12 col-lg-5 pt-2">
         <div class="fs-6 mb-3">
           <i class="bi bi-share-fill"></i>
           graph of thought
         </div>
 
-        <div class="d-flex justify-content-center">
-          <div class="d-inline-block bg-light border rounded">
+        <div class="d-flex justify-content-center bg-light border rounded" got-svg>
           <svg 
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 350 420"
-      width="350"
-      height="420"
+  viewBox="0 0 230 400"
+      width="230"
+      height="400"
     ><circle 
   r="16" 
-      cx="175" 
-      cy="370" 
+      cx="115" 
+      cy="360" 
       fill="#545454" role="button" class="node node-class-problem node-root" node-id="root"/> <circle 
   r="16" 
-      cx="100" 
-      cy="290" 
+      cx="40" 
+      cy="280" 
       fill="#5CB338" role="button" class="node node-class-reason node-o34" node-id="o34"/> <circle 
   r="16" 
-      cx="175" 
-      cy="290" 
+      cx="115" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-sk" node-id="sk"/> <circle 
   r="16" 
-      cx="250" 
-      cy="290" 
+      cx="190" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-ck" node-id="ck"/> <circle 
   r="16" 
-      cx="125" 
-      cy="210" 
+      cx="65" 
+      cy="200" 
       fill="#5CB338" role="button" class="node node-class-reason node-o2" node-id="o2"/> <circle 
   r="16" 
-      cx="225" 
-      cy="210" 
+      cx="165" 
+      cy="200" 
       fill="#5CB338" role="button" class="node node-class-reason node-o1" node-id="o1"/> <circle 
   r="16" 
-      cx="125" 
-      cy="130" 
+      cx="65" 
+      cy="120" 
       fill="#E85C0D" role="button" class="node node-class-calculate node-go2" node-id="go2"/> <circle 
   r="16" 
-      cx="225" 
-      cy="130" 
+      cx="165" 
+      cy="120" 
       fill="#E85C0D" role="button" class="node node-class-calculate node-go1" node-id="go1"/> <circle 
   r="16" 
-      cx="175" 
-      cy="50" 
+      cx="115" 
+      cy="40" 
       fill="#545454" role="button" class="node node-class-goal node-final" node-id="final"/> <line 
-  x1="190.046704835389" 
-      y1="353.950181508918" 
-      x2="234.953295164611" 
-      y2="306.049818491082" 
+  x1="130.046704835389" 
+      y1="343.950181508918" 
+      x2="174.953295164611" 
+      y2="296.049818491082" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="65.6585609973066"from-node-id="root" to-node-id="ck" class="edge node-ck"/> <line 
-  x1="243.437950151009" 
-      y1="269.001440483229" 
-      x2="231.562049848991" 
-      y2="230.998559516771" 
+  x1="183.437950151009" 
+      y1="259.001440483229" 
+      x2="171.562049848991" 
+      y2="220.998559516771" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="39.815273071201"from-node-id="ck" to-node-id="o1" class="edge node-o1"/> <line 
-  x1="225" 
-      y1="188" 
-      x2="225" 
-      y2="152" 
+  x1="165" 
+      y1="178" 
+      x2="165" 
+      y2="142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="o1" to-node-id="go1" class="edge node-go1"/> <line 
-  x1="175" 
-      y1="348" 
-      x2="175" 
-      y2="312" 
+  x1="115" 
+      y1="338" 
+      x2="115" 
+      y2="302" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="root" to-node-id="sk" class="edge node-sk"/> <line 
-  x1="163.34002331993" 
-      y1="271.344037311888" 
-      x2="136.65997668007" 
-      y2="228.655962688112" 
+  x1="103.34002331993" 
+      y1="261.344037311888" 
+      x2="76.65997668007" 
+      y2="218.655962688112" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="50.339811320566"from-node-id="sk" to-node-id="o2" class="edge node-o2"/> <line 
-  x1="125" 
-      y1="188" 
-      x2="125" 
-      y2="152" 
+  x1="65" 
+      y1="178" 
+      x2="65" 
+      y2="142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="o2" to-node-id="go2" class="edge node-go2"/> <line 
-  x1="136.65997668007" 
-      y1="111.344037311888" 
-      x2="163.34002331993" 
-      y2="68.6559626881119" 
+  x1="76.65997668007" 
+      y1="101.344037311888" 
+      x2="103.34002331993" 
+      y2="58.6559626881119" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="50.339811320566"from-node-id="go2" to-node-id="final" class="edge node-final"/> <line 
-  x1="159.953295164611" 
-      y1="353.950181508918" 
-      x2="115.046704835389" 
-      y2="306.049818491082" 
+  x1="99.9532951646108" 
+      y1="343.950181508918" 
+      x2="55.0467048353893" 
+      y2="296.049818491082" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="65.6585609973066"from-node-id="root" to-node-id="o34" class="edge node-o34"/></svg>
-          </div>
         </div>
 
-        <div class="my-3 d-flex justify-content-center">
+        <div class="my-3 d-flex justify-content-center got-action-center">
           <button role="button" class="mx-1 btn btn-outline-primary" id="reset-progress-action">
-            reset
+            <span class="d-lg-inline-block d-none">reset</span>
             <i class="bi bi-arrow-clockwise"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="skip-till-end-action">   
-            skip
+            <span class="d-lg-inline-block d-none">skip</span>
             <i class="bi bi-skip-forward"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="prev-step-action"> 
-            prev
+            <span class="d-lg-inline-block d-none">prev</span>
             <i class="bi bi-arrow-left"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="next-step-action"> 
-            next
+            <span class="d-lg-inline-block d-none">next</span>
             <i class="bi bi-arrow-right"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary d-lg-none" id="next-goto-got"> 
+            <span class="d-lg-inline-block d-none">next</span>
+            <i class="bi bi-arrow-up"></i>
           </button>
         </div>
 
       </aside>
 
-      <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
+      <aside class="col col-12 col-lg-7 pt-2 content-bar">
         <div class="fs-6">
           <i class="bi bi-person-walking"></i>
           steps
@@ -328,6 +330,8 @@
                         <span></span>
                     </div></div>
                 </div></article>
+
+        <div class="d-lg-none" style="height: 40px"></div>
       </aside>
     </div></main>
     </body>

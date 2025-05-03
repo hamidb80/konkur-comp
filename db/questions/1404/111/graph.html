@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <title>GoT of graph</title>
+      <title>GoT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,206 +35,208 @@
      <a up-follow href="/konkur-comp/">home</a>
       </li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/index.html">db</a></li><li class="breadcrumb-item "><a up-follow href="/konkur-comp/db/questions/index.html">questions</a></li><li class="breadcrumb-item ">1404</li><li class="breadcrumb-item ">111</li><li class="breadcrumb-item active">graph</li></ol>
   </nav>
-    </div><nav class="d-flex justify-content-center">
+    </div><nav class="d-lg-flex d-none justify-content-center">
   <ul class="pagination">
     <li class="page-item">
       <span class="page-link active" role="button">
         <i class="bi bi-layout-split"></i>
-        both
+        <span class="d-lg-inline-block d-none">both</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-share"></i>
-            graph first
+            <span class="d-lg-inline-block d-none">graph first</span>
           </span>
         </li>
         <li class="page-item">
           <span class="page-link" role="button">
             <i class="bi bi-card-text"></i>
-            notes first
+            <span class="d-lg-inline-block d-none">notes first</span>
           </span>
         </li>
       </ul>
     </nav>
 
     
-    <div class="row gx-2 m-3 mt-0" got 
+    <div class="row gx-4 m-1 m-lg-3 mt-0" got 
       data-events='[{"content": "db/questions/1404/111/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},{"content": "db/concepts/lossless/def","parents": ["root"],"kind": "node","id": "ll","height": 1,"class": "recall"},{"content": "db/concepts/basic/consistency","parents": ["ll"],"kind": "node","id": "cs","height": 2,"class": "recall"},{"content": "db/questions/1404/111/o1_","parents": ["cs"],"kind": "node","id": "o1","height": 1,"class": "reason"},{"content": "db/concepts/keys/primary-key","parents": ["root"],"kind": "node","id": "pk","height": 1,"class": "recall"},{"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 1,"class": "recall"},{"content": "db/questions/1404/111/o2_","parents": ["pk","sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},{"content": "db/concepts/fd/not","parents": ["root"],"kind": "node","id": "fdn","height": 1,"class": "recall"},{"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nr","height": 1,"class": "recall"},{"content": "db/concepts/norm/1nf","parents": ["nr"],"kind": "node","id": "n1","height": 1,"class": "recall"},{"content": "db/questions/1404/111/o4_","parents": ["n1"],"kind": "node","id": "o4","height": 1,"class": "reason"},{"content": "db/questions/1404/111/final_","parents": ["o1"],"kind": "node","id": "goal","height": 1,"class": "goal"}]'
       data-nodes='{"o1": {"content": "db/questions/1404/111/o1_","parents": ["cs"],"kind": "node","id": "o1","height": 1,"class": "reason"},"nr": {"content": "db/concepts/norm/def","parents": ["root"],"kind": "node","id": "nr","height": 1,"class": "recall"},"fdn": {"content": "db/concepts/fd/not","parents": ["root"],"kind": "node","id": "fdn","height": 1,"class": "recall"},"goal": {"content": "db/questions/1404/111/final_","parents": ["o1"],"kind": "node","id": "goal","height": 1,"class": "goal"},"sk": {"content": "db/concepts/keys/super-key","parents": ["root"],"kind": "node","id": "sk","height": 1,"class": "recall"},"o2": {"content": "db/questions/1404/111/o2_","parents": ["pk","sk"],"kind": "node","id": "o2","height": 1,"class": "reason"},"cs": {"content": "db/concepts/basic/consistency","parents": ["ll"],"kind": "node","id": "cs","height": 2,"class": "recall"},"n1": {"content": "db/concepts/norm/1nf","parents": ["nr"],"kind": "node","id": "n1","height": 1,"class": "recall"},"pk": {"content": "db/concepts/keys/primary-key","parents": ["root"],"kind": "node","id": "pk","height": 1,"class": "recall"},"root": {"content": "db/questions/1404/111/statement_","parents": [],"kind": "node","id": "root","height": 1,"class": "problem"},"ll": {"content": "db/concepts/lossless/def","parents": ["root"],"kind": "node","id": "ll","height": 1,"class": "recall"},"o4": {"content": "db/questions/1404/111/o4_","parents": ["n1"],"kind": "node","id": "o4","height": 1,"class": "reason"}}'
       data-anscestors='{"o1": ["root","cs","ll"],"nr": ["root"],"fdn": ["root"],"goal": ["o1","root","cs","ll"],"sk": ["root"],"o2": ["pk","root","sk"],"cs": ["ll","root"],"n1": ["root","nr"],"pk": ["root"],"root": [],"ll": ["root"],"o4": ["root","nr","n1"]}'
     >
-      <aside class="col col-5 pt-2">
+      <aside class="col col-12 col-lg-5 pt-2">
         <div class="fs-6 mb-3">
           <i class="bi bi-share-fill"></i>
           graph of thought
         </div>
 
-        <div class="d-flex justify-content-center">
-          <div class="d-inline-block bg-light border rounded">
+        <div class="d-flex justify-content-center bg-light border rounded" got-svg>
           <svg 
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 533.333333333333 420"
-      width="533.333333333333"
-      height="420"
+  viewBox="0 0 413.333333333333 400"
+      width="413.333333333333"
+      height="400"
     ><circle 
   r="16" 
-      cx="266.666666666667" 
-      cy="370" 
+      cx="206.666666666667" 
+      cy="360" 
       fill="#545454" role="button" class="node node-class-problem node-root" node-id="root"/> <circle 
   r="16" 
-      cx="100" 
-      cy="290" 
+      cx="40" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-nr" node-id="nr"/> <circle 
   r="16" 
-      cx="183.333333333333" 
-      cy="290" 
+      cx="123.333333333333" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-fdn" node-id="fdn"/> <circle 
   r="16" 
-      cx="266.666666666667" 
-      cy="290" 
+      cx="206.666666666667" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-pk" node-id="pk"/> <circle 
   r="16" 
-      cx="350" 
-      cy="290" 
+      cx="290" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-ll" node-id="ll"/> <circle 
   r="16" 
-      cx="433.333333333333" 
-      cy="290" 
+      cx="373.333333333333" 
+      cy="280" 
       fill="#864AF9" role="button" class="node node-class-recall node-sk" node-id="sk"/> <circle 
   r="16" 
-      cx="116.666666666667" 
-      cy="210" 
+      cx="56.6666666666667" 
+      cy="200" 
       fill="#864AF9" role="button" class="node node-class-recall node-n1" node-id="n1"/> <circle 
   r="16" 
-      cx="316.666666666667" 
-      cy="210" 
+      cx="256.666666666667" 
+      cy="200" 
       fill="#5CB338" role="button" class="node node-class-reason node-o2" node-id="o2"/> <circle 
   r="16" 
-      cx="416.666666666667" 
-      cy="210" 
+      cx="356.666666666667" 
+      cy="200" 
       fill="#864AF9" role="button" class="node node-class-recall node-cs" node-id="cs"/> <circle 
   r="16" 
-      cx="116.666666666667" 
-      cy="130" 
+      cx="56.6666666666667" 
+      cy="120" 
       fill="#5CB338" role="button" class="node node-class-reason node-o4" node-id="o4"/> <circle 
   r="16" 
-      cx="416.666666666667" 
-      cy="130" 
+      cx="356.666666666667" 
+      cy="120" 
       fill="#5CB338" role="button" class="node node-class-reason node-o1" node-id="o1"/> <circle 
   r="16" 
-      cx="266.666666666667" 
-      cy="50" 
+      cx="206.666666666667" 
+      cy="40" 
       fill="#545454" role="button" class="node node-class-goal node-goal" node-id="goal"/> <line 
-  x1="282.537187729348" 
-      y1="354.764299779826" 
-      x2="334.129478937319" 
-      y2="305.235700220174" 
+  x1="222.537187729348" 
+      y1="344.764299779826" 
+      x2="274.129478937319" 
+      y2="295.235700220174" 
       stroke-width="4"
       stroke="#424242"
-      stroke-dasharray="71.5181563410896"from-node-id="root" to-node-id="ll" class="edge node-ll"/> <line 
-  x1="364.084056792619" 
-      y1="273.099131848858" 
-      x2="402.582609874048" 
-      y2="226.900868151142" 
+      stroke-dasharray="71.5181563410897"from-node-id="root" to-node-id="ll" class="edge node-ll"/> <line 
+  x1="304.084056792619" 
+      y1="263.099131848858" 
+      x2="342.582609874048" 
+      y2="216.900868151142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="25.7728552908952 8.59095176363172 25.7728552908952"from-node-id="ll" to-node-id="cs" class="edge node-cs"/> <line 
-  x1="416.666666666667" 
-      y1="188" 
-      x2="416.666666666667" 
-      y2="152" 
+  x1="356.666666666667" 
+      y1="178" 
+      x2="356.666666666667" 
+      y2="142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="cs" to-node-id="o1" class="edge node-o1"/> <line 
-  x1="266.666666666667" 
-      y1="348" 
-      x2="266.666666666667" 
-      y2="312" 
+  x1="206.666666666667" 
+      y1="338" 
+      x2="206.666666666667" 
+      y2="302" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="root" to-node-id="pk" class="edge node-pk"/> <line 
-  x1="286.500173930969" 
-      y1="360.479916513135" 
-      x2="413.499826069031" 
-      y2="299.520083486865" 
+  x1="226.500173930969" 
+      y1="350.479916513135" 
+      x2="353.499826069031" 
+      y2="289.520083486865" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="140.872328318161"from-node-id="root" to-node-id="sk" class="edge node-sk"/> <line 
-  x1="278.326643346737" 
-      y1="271.344037311888" 
-      x2="305.006689986597" 
-      y2="228.655962688112" 
+  x1="218.326643346737" 
+      y1="261.344037311888" 
+      x2="245.006689986597" 
+      y2="218.655962688112" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="50.3398113205661"from-node-id="pk" to-node-id="o2" class="edge node-o2"/> <line 
-  x1="415.189298592722" 
-      y1="277.558376177866" 
-      x2="334.810701407278" 
-      y2="222.441623822134" 
+  x1="355.189298592722" 
+      y1="267.558376177866" 
+      x2="274.810701407278" 
+      y2="212.441623822134" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="97.4606344928195"from-node-id="sk" to-node-id="o2" class="edge node-o2"/> <line 
-  x1="250.796145603986" 
-      y1="354.764299779826" 
-      x2="199.203854396014" 
-      y2="305.235700220174" 
+  x1="190.796145603986" 
+      y1="344.764299779826" 
+      x2="139.203854396014" 
+      y2="295.235700220174" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="71.5181563410897"from-node-id="root" to-node-id="fdn" class="edge node-fdn"/> <line 
-  x1="246.833159402365" 
-      y1="360.479916513135" 
-      x2="119.833507264302" 
-      y2="299.520083486865" 
+  x1="186.833159402365" 
+      y1="350.479916513135" 
+      x2="59.833507264302" 
+      y2="289.520083486865" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="140.872328318161"from-node-id="root" to-node-id="nr" class="edge node-nr"/> <line 
-  x1="104.486993590464" 
-      y1="268.462430765773" 
-      x2="112.179673076203" 
-      y2="231.537569234227" 
+  x1="44.486993590464" 
+      y1="258.462430765773" 
+      x2="52.1796730762026" 
+      y2="221.537569234227" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="37.7176711475418"from-node-id="nr" to-node-id="n1" class="edge node-n1"/> <line 
-  x1="116.666666666667" 
-      y1="188" 
-      x2="116.666666666667" 
-      y2="152" 
+  x1="56.6666666666667" 
+      y1="178" 
+      x2="56.6666666666667" 
+      y2="142" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="36"from-node-id="n1" to-node-id="o4" class="edge node-o4"/> <line 
-  x1="397.254901960784" 
-      y1="119.647058823529" 
-      x2="286.078431372549" 
-      y2="60.3529411764706" 
+  x1="337.254901960784" 
+      y1="109.647058823529" 
+      x2="226.078431372549" 
+      y2="50.3529411764706" 
       stroke-width="4"
       stroke="#424242"
       stroke-dasharray="126"from-node-id="o1" to-node-id="goal" class="edge node-goal"/></svg>
-          </div>
         </div>
 
-        <div class="my-3 d-flex justify-content-center">
+        <div class="my-3 d-flex justify-content-center got-action-center">
           <button role="button" class="mx-1 btn btn-outline-primary" id="reset-progress-action">
-            reset
+            <span class="d-lg-inline-block d-none">reset</span>
             <i class="bi bi-arrow-clockwise"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="skip-till-end-action">   
-            skip
+            <span class="d-lg-inline-block d-none">skip</span>
             <i class="bi bi-skip-forward"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="prev-step-action"> 
-            prev
+            <span class="d-lg-inline-block d-none">prev</span>
             <i class="bi bi-arrow-left"></i>
           </button>
           <button role="button" class="mx-1 btn btn-outline-primary" id="next-step-action"> 
-            next
+            <span class="d-lg-inline-block d-none">next</span>
             <i class="bi bi-arrow-right"></i>
+          </button>
+          <button role="button" class="mx-1 btn btn-outline-primary d-lg-none" id="next-goto-got"> 
+            <span class="d-lg-inline-block d-none">next</span>
+            <i class="bi bi-arrow-up"></i>
           </button>
         </div>
 
       </aside>
 
-      <aside class="col col-7 pt-2 overflow-y-scroll content-bar" style="height: calc(100vh - 40px)">
+      <aside class="col col-12 col-lg-7 pt-2 content-bar">
         <div class="fs-6">
           <i class="bi bi-person-walking"></i>
           steps
@@ -400,6 +402,8 @@
                         <span></span>
                     </div></div>
                 </div></article>
+
+        <div class="d-lg-none" style="height: 40px"></div>
       </aside>
     </div></main>
     </body>
