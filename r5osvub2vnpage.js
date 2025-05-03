@@ -1,3 +1,18 @@
+function getAttrs(el, attrNames) {
+  return attrNames.map(n => el.getAttribute(n))
+}
+
+function setAttrs(el, attrNames, values) {
+  return attrNames.map((n, i) => el.setAttribute(n, values[i]))
+}
+
+function setStyles(el, stylesObj) {
+  for (const key in stylesObj) {
+    el.style[key] = stylesObj[key]
+  }
+}
+
+
 function nodeClass(id, dot = true) {
   return (dot ? '.' : '') + 'node-' + id
 }
@@ -123,7 +138,6 @@ up.compiler('[got]', (_, data) => {
   const cursorName = 'c'
   const { events, nodes, anscestors } = parseShallowJSON(data)
   let cursor
-  let messageShouldHiddenByDefault
 
   function focusNode(el) {
     let id = el ? el.getAttribute("node-id") : ""
@@ -147,27 +161,28 @@ up.compiler('[got]', (_, data) => {
     qa(".edge").forEach(e => clsx(e, false, "opacity-12"))
   }
 
-  function unversalStep(step, shouldJumpToContent) {
+  function unversalStep(step) {
     let sel
     let c
 
     for (let i = 0; i < events.length; i++) {
       let e = events[i]
-      let sel = "[for='" + e.id + "']"
+      let sel = `[for="${e.id}"]`
       let c = q(sel)
 
       clsx(c, step < i, "d-none")
       clsx(c, step != i, "opacity-25")
 
-      if (step == i && shouldJumpToContent)
+      if (step == i) {
         scrollToElement(q(".content-bar"), c)
+      }
 
       if (e.kind == "node") {
         let n = q(nodeClass(e.id))
         clsx(n, step < i, "d-none")
         if (step == i) focusNode(n)
 
-        let ed = qa("[to-node-id='" + e.id + "']")
+        let ed = qa(`[to-node-id="${e.id}"]`)
         if (ed.length) ed.forEach(el => clsx(el, step < i, "d-none"))
       }
     }
@@ -180,16 +195,16 @@ up.compiler('[got]', (_, data) => {
   }
 
   function resetProgress() {
-    unversalStep(setCursor(-1), true)
+    unversalStep(setCursor(-1))
   }
   function skipTillEnd() {
-    unversalStep(setCursor(events.length), true)
+    unversalStep(setCursor(events.length))
   }
   function nextStep() {
-    unversalStep(setCursor(cursor + 1), detectBreakpoint('lg'))
+    unversalStep(setCursor(cursor + 1))
   }
   function prevStep() {
-    unversalStep(setCursor(cursor - 1), detectBreakpoint('lg'))
+    unversalStep(setCursor(cursor - 1))
   }
 
   function prepare() {
@@ -204,7 +219,7 @@ up.compiler('[got]', (_, data) => {
         qa(".content").forEach(el =>
           clsx(el, el.getAttribute("for") != id, "opacity-25"))
 
-        scrollToElement(q(".content-bar"), q("[for=" + id + "]"))
+        scrollToElement(q(".content-bar"), q(`[for="${id}"]`))
       }
 
       el.onmouseleave = () => {
@@ -228,7 +243,10 @@ up.compiler('[got]', (_, data) => {
     q("#skip-till-end-action").onclick = skipTillEnd
     q("#prev-step-action").onclick = prevStep
     q("#next-step-action").onclick = nextStep
-    q("#next-goto-got").onclick = () => scrollToElement(document.body, q(`[got]`))
+    qa("button[node-id]").forEach(el => el.onclick = () => {
+      scrollToElement(document.body, q(`#got-wrapper`))
+      focusNode(el)
+    })
   }
 
   function keyboardEvent(e) {
@@ -258,10 +276,5 @@ up.compiler('[got]', (_, data) => {
   return destructor
 })
 
-up.compiler('[got-svg]', el => {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // transform: rotate(90deg) translate(-140px, -115px) scale(0.7);
-  // z-index: 5;
+up.compiler('[got-svg]', parent => {
 }) 
