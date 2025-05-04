@@ -8,7 +8,7 @@
     `LossLess join`
     )
   (p 
-    `داشتن کلید اصلی در رابطه ها`
+    `داشتن کلید اصلی در رابطه ها` _ 
     `Primary Key`
     )
   (p 
@@ -16,9 +16,9 @@
     `Functional Dependency`
     )
   (p 
-    `کاهش در رابطه ها`
-    `(Relation)`
-    `و خصیصه ها`
+    `کاهش در رابطه ها` _ 
+    `(Relation)` _ 
+    `و خصیصه ها` _ 
     `(Attribute)`
     )
   )
