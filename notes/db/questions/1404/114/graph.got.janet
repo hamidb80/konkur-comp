@@ -1,5 +1,6 @@
 [
   (n :root  1      :problem   []           :db/questions/1404/114/statement_)
+  (q :think                   [:root]      :db/questions/1404/114/rep_)
   (n :r1    1      :recall    [:root]      :db/concepts/keys/super-key)
   (n :r2    1      :recall    [:root]      :db/concepts/keys/primary-key)
   (n :r3    2      :reason    [:r1 :r2]    :db/questions/1404/114/rel_)
