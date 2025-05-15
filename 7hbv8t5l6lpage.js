@@ -145,9 +145,11 @@ up.compiler('[got]', (_, data) => {
 
     qa(".node").forEach(e => {
       let pid = e.getAttribute("node-id")
-      if (id == pid) highlightNode(e)
+      let should = id == pid && e.getAttribute("type") === "node"
 
+      if (should) highlightNode(e)
       else blurNode(e)
+
       clsx(e, id != pid && !ans.includes(pid), "opacity-25")
     })
     qa(".edge").forEach(e => {
@@ -155,7 +157,7 @@ up.compiler('[got]', (_, data) => {
       clsx(e, id != pid && !ans.includes(pid), "opacity-12")
     })
     qa(`.message`).forEach(e => {
-      clsx(e, id != e.getAttribute("node-id"), "opacity-25")
+      clsx(e, id != e.getAttribute("node-id"), "d-none")
     })
   }
 
@@ -163,7 +165,7 @@ up.compiler('[got]', (_, data) => {
     qa(".content").forEach(e => clsx(e, false, "opacity-25"))
     qa(".node").forEach(e => { clsx(e, false, "opacity-25"); blurNode(e) })
     qa(".edge").forEach(e => clsx(e, false, "opacity-12"))
-    qa(".message").forEach(e => { clsx(e, true, "opacity-25") })
+    qa(".message").forEach(e => { clsx(e, cursor >= 0 && data.events[cursor].id != e.getAttribute("node-id"), "d-none") })
   }
 
   function unversalStep(step) {
@@ -183,18 +185,19 @@ up.compiler('[got]', (_, data) => {
       }
 
       if (e.kind == "node") {
-        let n = q(nodeClass(e.id))
-        clsx(n, step < i, "d-none")
-        if (step == i) focusNode(n)
+        let node = q(nodeClass(e.id))
+        if (step == i) focusNode(node)
+        clsx(node, step < i, "d-none")
 
         let ed = qa(`[to-node-id="${e.id}"]`)
         if (ed.length) ed.forEach(el => clsx(el, step < i, "d-none"))
+
       }
       else if (e.kind == "message") {
         let sel = `[node-id="${e.id}"]`
         let n = q(sel)
-        clsx(n, step < i, "d-none")
-        clsx(n, step > i, "opacity-25")
+        clsx(n, step != i, "d-none")
+        if (step == i) focusNode(n)
       }
       else {
         console.assert(false, "invalid item kind: ", e.kind, "from", e)
@@ -245,23 +248,6 @@ up.compiler('[got]', (_, data) => {
       el.onmouseenter = () => {
         focusNode(q(nodeClass(nodeId)))
         qa(".content").forEach(e => clsx(e, e != el, "opacity-25"))
-      }
-
-      el.onmouseleave = () => {
-        unfocusAll()
-      }
-    })
-
-    qa(".message").forEach(el => {
-      let id = el.getAttribute("node-id")
-
-      el.onmouseenter = () => {
-        focusNode(el)
-
-        qa(".content").forEach(e =>
-          clsx(e, e.getAttribute("for") != id, "opacity-25"))
-
-        scrollToElement(q(".content-bar"), q(`[for="${id}"]`))
       }
 
       el.onmouseleave = () => {
