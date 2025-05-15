@@ -16,7 +16,7 @@
   
   (n :sub4      1      :problem   [:root]    :db/questions/1404/111/o4-init_)
   (q :application                 [:sub4]    :db/questions/1404/111/nf_)
-  (n :nr        1      :recall    [:sub4]    :db/concepts/norm/def)
+  (n :nr        2      :recall    [:sub4]    :db/concepts/norm/def)
   (n :n1        1      :recall    [:nr]      :db/concepts/norm/1nf)
   (n :n2        1      :recall    [:nr]      :db/concepts/norm/2nf)
   (n :n3        1      :recall    [:nr]      :db/concepts/norm/3nf)
