@@ -1,7 +1,7 @@
 [
 (p
   `بنابر سلسله مراتب` _ 
-  :db/terms/normal _
+  :db/terms/normalize _
   `گزینه 1 نادرست است`
   )
 
